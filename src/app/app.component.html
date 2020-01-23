@@ -2,14 +2,15 @@
   ENVISO Parent 
 </h1>
 
+
 <nav>
   <a routerLink="child1">Child</a> 
 </nav>
 
-<!-- <input #name (keyup.enter)="onKey(name.value)">
-  <p>{{values}}</p> -->
+ <input #name (keyup.enter)="onKey(name.value)" (blur)="onKey(name.value)"> <!-- blur to get value without press enter, and press elsewhere on the page-->
+  <p>{{values}}</p> 
 
-
+<!-- <app-child-component1 *ngFor="let name of names" [name]="name"></app-child-component1> -->
 
   
 <router-outlet></router-outlet>

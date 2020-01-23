@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { ChildComponent1Component } from './child-component1/child-component1.component';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ParentComponent';
   values = '';
+
+  names = ['Dr IQ', '   ', '  Bombasto  '];
+
+
 
   onKey(name: string) { // without type info
     // this.values = event.target.value + ' | ';
