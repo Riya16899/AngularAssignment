@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ChildComponent1Component } from './child-component1/child-component1.component';
+// import { ChildComponent1Component } from './child-component1/child-component1.component';
 
 @Component({
   selector: 'app-root',
@@ -7,16 +7,16 @@ import { ChildComponent1Component } from './child-component1/child-component1.co
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ParentComponent';
-  values = '';
+  // title = 'ParentComponent';
+  // values = '';
 
-  names = ['Dr IQ', '   ', '  Bombasto  '];
+  // names = ['Dr IQ', '   ', '  Bombasto  '];
 
 
 
-  onKey(name: string) { // without type info
-    // this.values = event.target.value + ' | ';
-    this.values = name;
-  }
+  // onKey(name: string) { // without type info
+  //   // this.values = event.target.value + ' | ';
+  //   this.values = name;
+  // }
 
 }

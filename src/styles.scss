@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-h1 {
+.h1 {
     font-family: fantasy;
     font-size: larger;
-    color: #be1e1e;
     margin: auto;
     text-align: center;
+}
+.h1:hover {
+    text-transform: uppercase;
 }
 .center {
     text-align: center;
@@ -15,11 +17,11 @@ h1 {
     width: 100%;
     margin: auto;
     color-adjust: #111111;
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-     transition: height 2s;
+    // -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    //  transition: height 2s;
 }
 
-div:hover {
+.div:hover {
     // -webkit-transform: rotate(90deg);
     // transform: rotate(90deg); // for rotation of div
     height: 110%;
@@ -27,7 +29,7 @@ div:hover {
     background-color: rgb(196, 253, 174);
 }
 
-header{
+.header{
     width: 100%;
     height: 20%;
     font-size: 30px;
@@ -53,7 +55,7 @@ header{
 }
 
 
-.s {
+.section{
     width: 100%;
     height: 60%;
     background-color: rgb(105, 132, 172);
@@ -61,10 +63,10 @@ header{
     border-color: #111111;
     box-shadow: hsl;
     box-sizing: unquote($string: "");
+    text-align: center;
 }
 
-footer {
-    width: 100%; 
+.footer {
     bottom: 0px; 
     height: 20%;
     background-color: rgb(105, 132, 172); 
@@ -75,20 +77,23 @@ footer {
     font-weight:bold;
     
 }
+// h3:hover {
+//     text-transform: uppercase;
+// }
 
-.header h1:hover {
-    background-color: #ddd;
-    color: black;
-}
+// .header h1:hover {
+//     background-color: #ddd;
+//     color: black;
+// }
 
-.header h1.active {
-    background-color: dodgerblue;
-    color: white;
-}
+// .header h1.active {
+//     background-color: dodgerblue;
+//     color: white;
+// }
 
 .button {
-    background-color: rgb(13, 89, 160);
-    border: none;
+    background-color: rgb(246, 249, 252);
+    border: 1.5px solid #bd9393;;
     color: rgb(10, 18, 26);
     text-align: center;
     font-weight: bold;
@@ -98,3 +103,17 @@ footer {
     cursor: pointer;
 }
 
+header-part {
+    height: 20%;
+
+}
+
+section-part {
+    height: 80%;
+
+}
+
+footer-part {
+    height: 20%;
+
+}

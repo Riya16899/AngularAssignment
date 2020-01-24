@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AppComponent } from '../app.component';
+// import { AppComponent } from '../app.component';
 
 
 @Component({
@@ -10,11 +10,11 @@ import { AppComponent } from '../app.component';
 export class ChildComponent1Component implements OnInit {
 
   private namee = '';
-  @Input()
-  set name(name: string) {
-    this.namee = (name && name.trim()) || '<no name>';
-  }
-  get name(): string { return this.namee; }
+  // @Input()
+  // set name(name: string) {
+  //   this.namee = (name && name.trim()) || '<no name>';
+  // }
+  // get name(): string { return this.namee; }
 
 
 

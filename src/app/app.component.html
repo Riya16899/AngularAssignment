@@ -1,17 +1,23 @@
-<h1>
+
+<h1 class="center h1" type="submit" routerLink="child1">
   ENVISO Parent 
 </h1>
 
 
-<nav>
-  <a routerLink="child1">Child</a> 
-</nav>
+  <!-- <nav>
+    <a routerLink="child1">Child</a> 
+  </nav> -->
+<!-- <div class="center"><button class="button" type="submit" routerLink="child1" >Ok</button></div>
+   -->
 
- <input #name (keyup.enter)="onKey(name.value)" (blur)="onKey(name.value)"> <!-- blur to get value without press enter, and press elsewhere on the page-->
-  <p>{{values}}</p> 
+
+
+ <!-- <input #name (keyup.enter)="onKey(name.value)" (blur)="onKey(name.value)"> <!-- blur to get value without press enter, and press elsewhere on the page-->
+ <!-- <p>{{values}}</p>  -->
 
 <!-- <app-child-component1 *ngFor="let name of names" [name]="name"></app-child-component1> -->
+<!-- <app-child-component1></app-child-component1> -->
+<div>
+  <router-outlet></router-outlet>
 
-  
-<router-outlet></router-outlet>
- 
+</div>
