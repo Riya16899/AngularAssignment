@@ -7,6 +7,14 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+   public items = ['i1', 'i2', 'i3'];
+    addItem(newItem: string) {
+    this.items.push(newItem);
+    console.log(this.items);
+   }
+
+
   // title = 'ParentComponent';
   // values = '';
 

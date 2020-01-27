@@ -2,13 +2,12 @@
 <h1 class="center h1" type="submit" routerLink="child1">
   ENVISO Parent 
 </h1>
+<h1 class="center h1" type="submit" routerLink="child2">
+  GTCX Parent 
+</h1>
+<button type="submit" routerLink="" style="align-items: center;" class="button">Back</button>
 
 
-  <!-- <nav>
-    <a routerLink="child1">Child</a> 
-  </nav> -->
-<!-- <div class="center"><button class="button" type="submit" routerLink="child1" >Ok</button></div>
-   -->
 
 
 
@@ -17,7 +16,11 @@
 
 <!-- <app-child-component1 *ngFor="let name of names" [name]="name"></app-child-component1> -->
 <!-- <app-child-component1></app-child-component1> -->
-<div>
+  <div>
   <router-outlet></router-outlet>
+</div>  
 
-</div>
+<!-- this is for @output. -->
+<!-- <app-child-component1 (newItemEvent)="addItem($event)"></app-child-component1> -->
+
+

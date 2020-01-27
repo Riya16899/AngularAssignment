@@ -103,17 +103,21 @@
     cursor: pointer;
 }
 
-header-part {
+.header-part {
     height: 20%;
+    background-color: darkslategrey; padding: 2%;
 
 }
 
-section-part {
+.section-part {
     height: 80%;
+    background-color: rgb(224, 230, 224); padding: 2%;
 
 }
 
-footer-part {
+.footer-part {
     height: 20%;
+    background-color: dimgray;
+    padding: 2%;
 
 }

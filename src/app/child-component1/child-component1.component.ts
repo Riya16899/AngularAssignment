@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 // import { AppComponent } from '../app.component';
-
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child-component1',
@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./child-component1.component.scss']
 })
 export class ChildComponent1Component implements OnInit {
+  @Output() newItemEvent = new EventEmitter<string>();
 
   private namee = '';
   // @Input()
@@ -16,7 +17,10 @@ export class ChildComponent1Component implements OnInit {
   // }
   // get name(): string { return this.namee; }
 
-
+  // addNewItem(value: string) {
+  //   this.newItemEvent.emit(value);
+  //   console.log(value);
+  // }
 
   constructor() { }
 
